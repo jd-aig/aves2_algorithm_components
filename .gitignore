@@ -1,0 +1,7 @@
+*.ckpt*
+*.pyc
+*.pb
+*.gitkeep
+.idea/*
+.idea
+.DS_Store

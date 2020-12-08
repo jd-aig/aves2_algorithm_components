@@ -1,0 +1,9 @@
+time python tfrecord.py --data_dir ../../../ocr-dataset/attention_ocr_train/ --subset train --output_dir output_tf/
+
+python train.py --dataset_name=newtextdataset
+python train.py --checkpoint_inception=inception_v3.ckpt --dataset_name=newtextdataset
+python eval.py --dataset_name=newtextdataset
+
+python demo_inference.py --batch_size=32   --checkpoint=/tmp/attention_ocr/train/model.ckpt-25370  --image_path_pattern=./datasets/data/fsns/temp/fsns_train_%02d.png
+
+python demo_inference.py --batch_size=32  --checkpoint=/tmp/attention_ocr/train/model.ckpt-8430  --image_path_pattern=../../../ocr-dataset/attention_ocr_test/ --dataset_name=newtextdataset

@@ -1,0 +1,1 @@
+/bin/bash cmd.sh --output_path ./output/ --tfrecords_dir /export/luozhuang/softwares/components/OBJECT_DETECTION/create_tfrecord_fsr/output/ --pretrainmodel_dir /export/luozhuang/data_tf/object_detections_quickai/train_ssd/models/ssd_mobilenet_v2_coco_2018_03_29/ --learning_rate 0.0001 --epochs 1 --batch_size 24

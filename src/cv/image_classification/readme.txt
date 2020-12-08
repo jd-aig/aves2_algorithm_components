@@ -1,0 +1,1 @@
+python model_train.py --pre_trained_model_ckpt_path ../pre_trained_model/ --checkpoint_dir ../output/ --summary_dir ../output/ --result_dir ../output/ --train_data_dir ../train_tf/ --validation_data_dir ../eval_tf/ --num_class 10  --model_name mobilenet_v2_14 --batch_size 96

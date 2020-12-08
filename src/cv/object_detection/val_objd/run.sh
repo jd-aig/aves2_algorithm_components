@@ -1,0 +1,1 @@
+/bin/bash cmd.sh --output_path ./output/ --tfrecords_dir /export/luozhuang/softwares/components/OBJECT_DETECTION/create_tfrecord_fsr/output/ --model_dir /export/luozhuang/softwares/components/OBJECT_DETECTION/train_ssd/output/
